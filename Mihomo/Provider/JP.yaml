@@ -1,5 +1,4 @@
 # 内容：一些 JP 的网站，杂项不做分类
-# 数量：6条
 payload:
   - DOMAIN-SUFFIX,onsen.ag
   - DOMAIN-SUFFIX,dmm.com
@@ -7,3 +6,4 @@ payload:
   - DOMAIN-SUFFIX,erogamescape.org
   - DOMAIN-SUFFIX,5ch.net
   - DOMAIN-SUFFIX,2ch.sc
+  - DOMAIN-SUFFIX,misskey.io
