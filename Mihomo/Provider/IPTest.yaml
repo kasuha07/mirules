@@ -1,0 +1,5 @@
+# 内容：一些常用的 IP 检测网站
+payload:
+  - DOMAIN-SUFFIX,ping0.cc
+  - DOMAIN-SUFFIX,ipdata.co
+  
