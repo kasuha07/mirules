@@ -1,0 +1,12 @@
+proxies:
+- name: "MITM"
+  type: http
+  server: 10.0.0.5
+  port: 5500
+
+proxy-groups:
+- name: "proxy"
+  type: select
+  proxies:
+  - DIRECT
+  - MITM
