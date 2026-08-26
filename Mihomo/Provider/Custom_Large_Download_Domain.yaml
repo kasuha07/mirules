@@ -21,6 +21,13 @@ payload:
   - '+.production.cloudflare.docker.com'
   - '+.download.docker.com'
   - '+.quay.io'
+  - '+.registry.k8s.io'
+  - '+.public.ecr.aws'
+  - '+.ecr-public.aws.com'
+  - '+.mcr.microsoft.com'
+  - '+.gcr.io'
+  - '+.pkg.dev'
+  - '+.nvcr.io'
 
   # Python / PyPI / PyTorch
   - '+.files.pythonhosted.org'
@@ -61,12 +68,10 @@ payload:
 
   # Rust / Cargo
   - '+.static.crates.io'
-  - '+.index.crates.io'
   - '+.static.rust-lang.org'
 
   # Go modules and SDK
   - '+.proxy.golang.org'
-  - '+.sum.golang.org'
   - '+.dl.google.com'
 
   # Java / Maven / Gradle
@@ -88,6 +93,10 @@ payload:
   # Hugging Face model and dataset storage/CDN
   - '+.hf.co'
 
+  # GPU / AI SDK and drivers
+  - '+.download.nvidia.com'
+  - '+.repo.radeon.com'
+
   # Kubernetes / HashiCorp
   - '+.pkgs.k8s.io'
   - '+.dl.k8s.io'
@@ -101,5 +110,10 @@ payload:
   - '+.download-cdn.jetbrains.com'
   - '+.update.code.visualstudio.com'
   - '+.vscode.download.prss.microsoft.com'
+  - '+.download.visualstudio.microsoft.com'
+  - '+.download.visualstudio.com'
+  - '+.download.microsoft.com'
+  - '+.gallerycdn.vsassets.io'
   - '+.packages.microsoft.com'
   - '+.downloads.sourceforge.net'
+  - '+.dl.sourceforge.net'
