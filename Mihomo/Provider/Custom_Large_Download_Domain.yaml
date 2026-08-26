@@ -1,0 +1,91 @@
+payload:
+  # Git / source hosting and container registries
+  - '+.gitlab.com'
+  - '+.ghcr.io'
+  - '+.registry.gitlab.com'
+  - '+.registry-1.docker.io'
+  - '+.production.cloudflare.docker.com'
+  - '+.download.docker.com'
+  - '+.quay.io'
+
+  # Python / PyPI / PyTorch
+  - '+.files.pythonhosted.org'
+  - '+.download.pytorch.org'
+
+  # Node.js / npm / Yarn
+  - '+.registry.npmjs.org'
+  - '+.registry.yarnpkg.com'
+  - '+.nodejs.org'
+
+  # Ubuntu
+  - '+.archive.ubuntu.com'
+  - '+.security.ubuntu.com'
+  - '+.ports.ubuntu.com'
+  - '+.old-releases.ubuntu.com'
+  - '+.releases.ubuntu.com'
+  - '+.cdimage.ubuntu.com'
+  - '+.cloud-images.ubuntu.com'
+  - '+.ppa.launchpadcontent.net'
+
+  # Debian
+  - '+.deb.debian.org'
+  - '+.security.debian.org'
+  - '+.ftp.debian.org'
+  - '+.cdimage.debian.org'
+  - '+.snapshot.debian.org'
+
+  # Other Linux distributions and kernel mirrors
+  - '+.dl-cdn.alpinelinux.org'
+  - '+.geo.mirror.pkgbuild.com'
+  - '+.download.fedoraproject.org'
+  - '+.dl.fedoraproject.org'
+  - '+.download.opensuse.org'
+  - '+.downloads.openwrt.org'
+  - '+.cdn.kernel.org'
+  - '+.mirrors.edge.kernel.org'
+  - '+.cache.nixos.org'
+
+  # Rust / Cargo
+  - '+.static.crates.io'
+  - '+.index.crates.io'
+  - '+.static.rust-lang.org'
+
+  # Go modules and SDK
+  - '+.proxy.golang.org'
+  - '+.sum.golang.org'
+  - '+.dl.google.com'
+
+  # Java / Maven / Gradle
+  - '+.repo1.maven.org'
+  - '+.repo.maven.apache.org'
+  - '+.repo.gradle.org'
+  - '+.services.gradle.org'
+  - '+.downloads.gradle.org'
+  - '+.plugins.gradle.org'
+
+  # .NET / NuGet
+  - '+.api.nuget.org'
+  - '+.globalcdn.nuget.org'
+
+  # Conda / Anaconda
+  - '+.repo.anaconda.com'
+  - '+.conda.anaconda.org'
+
+  # Hugging Face model and dataset storage/CDN
+  - '+.hf.co'
+
+  # Kubernetes / HashiCorp
+  - '+.pkgs.k8s.io'
+  - '+.dl.k8s.io'
+  - '+.cdn.dl.k8s.io'
+  - '+.releases.hashicorp.com'
+  - '+.apt.releases.hashicorp.com'
+  - '+.rpm.releases.hashicorp.com'
+
+  # Developer tools and release downloads
+  - '+.download.jetbrains.com'
+  - '+.download-cdn.jetbrains.com'
+  - '+.update.code.visualstudio.com'
+  - '+.vscode.download.prss.microsoft.com'
+  - '+.packages.microsoft.com'
+  - '+.downloads.sourceforge.net'
