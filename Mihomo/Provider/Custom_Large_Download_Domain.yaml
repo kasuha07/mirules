@@ -117,3 +117,7 @@ payload:
   - '+.packages.microsoft.com'
   - '+.downloads.sourceforge.net'
   - '+.dl.sourceforge.net'
+
+  # Sekai / Sonolus large downloads
+  - '+.storage.sekai.best'
+  - '+.sonolus.sekai.best'
