@@ -118,6 +118,8 @@ payload:
   - '+.downloads.sourceforge.net'
   - '+.dl.sourceforge.net'
 
-  # Sekai / Sonolus large downloads
+  # Game content / large downloads
   - '+.storage.sekai.best'
   - '+.sonolus.sekai.best'
+  - '+.bestdori.com'
+  - '+.sbuga.com'
