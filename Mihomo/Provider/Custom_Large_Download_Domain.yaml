@@ -14,9 +14,11 @@ payload:
   - '+.pkg-containers.githubusercontent.com'
   - '+.ghcr.io'
 
-  # Git / source hosting and container registries
+  # Git / source hosting, CDN and container registries
   - '+.gitlab.com'
   - '+.registry.gitlab.com'
+  - '+.jsdelivr.com'
+  - '+.jsdelivr.net'
   - '+.registry-1.docker.io'
   - '+.production.cloudflare.docker.com'
   - '+.download.docker.com'
