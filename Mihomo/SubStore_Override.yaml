@@ -1,0 +1,343 @@
+# ============================================================
+# Sub-Store Mihomo YAML Override
+# Converted from: Mihomo/Custom_Clash.ini
+#
+# Usage in Sub-Store:
+# 1. 文件 -> 新建 -> 类型选择「mihomo 配置」
+# 2. 来源选择「单条订阅」或「组合订阅」
+# 3. 在「操作」中添加「脚本操作」
+# 4. 使用本文件的 Raw URL 作为 YAML 覆写
+#
+# This file intentionally does not define "proxies".
+# Sub-Store generates proxies dynamically from the selected subscription.
+# ============================================================
+
+rule-providers:
+  custom_direct_domain:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://testingcf.jsdelivr.net/gh/kasuha07/mirules@main/Mihomo/Provider/Custom_Direct_Domain.yaml"
+    interval: 28800
+
+  custom_proxy_classical:
+    type: http
+    behavior: classical
+    format: yaml
+    url: "https://api.asailor.org/Custom_OpenClash_Rules/main/rule/Custom_Proxy_Classical.yaml"
+    interval: 28800
+
+  steam_cdn:
+    type: http
+    behavior: classical
+    format: yaml
+    url: "https://api.asailor.org/Custom_OpenClash_Rules/main/rule/Steam_CDN_Classical.yaml"
+    interval: 2880
+
+  custom_large_download_domain:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://testingcf.jsdelivr.net/gh/kasuha07/mirules@main/Mihomo/Provider/Custom_Large_Download_Domain.yaml"
+    interval: 28800
+
+  ai_global:
+    type: http
+    behavior: classical
+    format: yaml
+    url: "https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/clash/global.yaml"
+    interval: 28800
+
+  custom_port_direct:
+    type: http
+    behavior: classical
+    format: yaml
+    url: "https://api.asailor.org/Custom_OpenClash_Rules/main/rule/Custom_Port_Direct.yaml"
+    interval: 28800
+
+proxy-groups:
+  - name: "🚀 手动选择"
+    type: select
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+      - "♻️ 自动选择"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+    include-all-proxies: true
+    exclude-type: direct
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    timeout: 5000
+    tolerance: 50
+
+  - name: "📦 大流量下载"
+    type: select
+    proxies:
+      - "🚀 手动选择"
+      - "♻️ 自动选择"
+      - "🎯 全球直连"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "🤖 AI服务"
+    type: select
+    proxies:
+      - "🚀 手动选择"
+      - "♻️ 自动选择"
+      - "🎯 全球直连"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "🌐 社交媒体"
+    type: select
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+      - "🚀 手动选择"
+      - "♻️ 自动选择"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "📢 谷歌服务"
+    type: select
+    proxies:
+      - "🚀 手动选择"
+      - "♻️ 自动选择"
+      - "🎯 全球直连"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "Ⓜ️ 微软服务"
+    type: select
+    proxies:
+      - "🎯 全球直连"
+      - "🚀 手动选择"
+      - "♻️ 自动选择"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "📹 YouTube"
+    type: select
+    proxies:
+      - "🚀 手动选择"
+      - "♻️ 自动选择"
+      - "🎯 全球直连"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "🎵 Spotify"
+    type: select
+    proxies:
+      - "🚀 手动选择"
+      - "♻️ 自动选择"
+      - "🎯 全球直连"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "🎮 游戏平台"
+    type: select
+    proxies:
+      - "🎯 全球直连"
+      - "🚀 手动选择"
+      - "♻️ 自动选择"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "🎮 Steam"
+    type: select
+    proxies:
+      - "🎯 全球直连"
+      - "🚀 手动选择"
+      - "♻️ 自动选择"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "🐟 漏网之鱼"
+    type: select
+    proxies:
+      - "🚀 手动选择"
+      - "♻️ 自动选择"
+      - "🎯 全球直连"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇹🇼 台湾节点"
+      - "🌐 其他地区"
+    include-all-proxies: true
+    exclude-type: direct
+
+  - name: "🔀 非标端口"
+    type: select
+    proxies:
+      - "🐟 漏网之鱼"
+      - "🎯 全球直连"
+
+  - name: "🇭🇰 香港节点"
+    type: url-test
+    include-all-proxies: true
+    exclude-type: direct
+    filter: '(?i)(港|HK|Hong Kong|HongKong|深港|🇭🇰)'
+    url: "https://www.gstatic.com/generate_204"
+    interval: 600
+    timeout: 5000
+    tolerance: 50
+
+  - name: "🇺🇸 美国节点"
+    type: url-test
+    include-all-proxies: true
+    exclude-type: direct
+    filter: '(?i)(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|🇺🇸|United States|UnitedStates)'
+    url: "https://www.gstatic.com/generate_204"
+    interval: 600
+    timeout: 5000
+    tolerance: 50
+
+  - name: "🇯🇵 日本节点"
+    type: url-test
+    include-all-proxies: true
+    exclude-type: direct
+    filter: '(?i)(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵|(?:^|[^尼-])日)'
+    url: "https://www.gstatic.com/generate_204"
+    interval: 600
+    timeout: 5000
+    tolerance: 50
+
+  - name: "🇸🇬 新加坡节点"
+    type: url-test
+    include-all-proxies: true
+    exclude-type: direct
+    filter: '(?i)(新加坡|坡|狮城|SG|🇸🇬|Singapore)'
+    url: "https://www.gstatic.com/generate_204"
+    interval: 600
+    timeout: 5000
+    tolerance: 50
+
+  - name: "🇹🇼 台湾节点"
+    type: url-test
+    include-all-proxies: true
+    exclude-type: direct
+    filter: '(?i)(台|台湾|新北|彰化|TW|Taiwan|🇹🇼)'
+    url: "https://www.gstatic.com/generate_204"
+    interval: 600
+    timeout: 5000
+    tolerance: 50
+
+  - name: "🌐 其他地区"
+    type: url-test
+    include-all-proxies: true
+    exclude-type: direct
+    exclude-filter: '(?i)(港|HK|Hong Kong|HongKong|深港|🇭🇰|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|🇺🇸|United States|UnitedStates|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵|(?:^|[^尼-])日|新加坡|坡|狮城|SG|🇸🇬|Singapore|台|台湾|新北|彰化|TW|Taiwan|🇹🇼)'
+    url: "https://www.gstatic.com/generate_204"
+    interval: 600
+    timeout: 5000
+    tolerance: 50
+
+  - name: "🎯 全球直连"
+    type: select
+    proxies:
+      - DIRECT
+
+rules:
+  - "GEOSITE,private,🎯 全球直连"
+  - "GEOIP,private,🎯 全球直连,no-resolve"
+  - "RULE-SET,custom_direct_domain,🎯 全球直连"
+  - "RULE-SET,custom_proxy_classical,🚀 手动选择"
+  - "GEOSITE,google-cn,🎯 全球直连"
+  - "GEOSITE,category-games@cn,🎯 全球直连"
+  - "RULE-SET,steam_cdn,🎯 全球直连"
+  - "GEOSITE,category-game-platforms-download,🎯 全球直连"
+  - "GEOSITE,category-public-tracker,🎯 全球直连"
+
+  - "GEOSITE,telegram,📦 大流量下载"
+  - "GEOSITE,category-communication,🌐 社交媒体"
+  - "GEOSITE,category-social-media-!cn,🌐 社交媒体"
+  - "DOMAIN-KEYWORD,download,📦 大流量下载"
+  - "RULE-SET,custom_large_download_domain,📦 大流量下载"
+  - "RULE-SET,ai_global,🤖 AI服务"
+  - "GEOSITE,steam,🎮 Steam"
+  - "GEOSITE,youtube,📹 YouTube"
+  - "GEOSITE,spotify,🎵 Spotify"
+  - "DOMAIN,api.github.com,🚀 手动选择"
+  - "GEOSITE,microsoft,Ⓜ️ 微软服务"
+  - "GEOSITE,googlefcm,📢 谷歌服务"
+  - "GEOSITE,google,📢 谷歌服务"
+  - "GEOSITE,gfw,🚀 手动选择"
+  - "GEOSITE,category-games,🎮 游戏平台"
+
+  - "GEOIP,google,📢 谷歌服务,no-resolve"
+  - "GEOIP,telegram,📦 大流量下载,no-resolve"
+  - "GEOIP,twitter,🌐 社交媒体,no-resolve"
+
+  - "GEOSITE,cn,🎯 全球直连"
+  - "GEOIP,cn,🎯 全球直连,no-resolve"
+
+  - "RULE-SET,custom_port_direct,🔀 非标端口"
+  - "MATCH,🐟 漏网之鱼"
