@@ -1,0 +1,38 @@
+payload:
+  # Speed / latency / network quality
+  - '+.speedtest.net'
+  - '+.ooklaserver.net'
+  - '+.fast.com'
+  - '+.speed.cloudflare.com'
+  - '+.testmy.net'
+  - '+.speedof.me'
+
+  # IP / ASN / geolocation
+  - '+.ipinfo.io'
+  - '+.ip.sb'
+  - '+.ifconfig.me'
+  - '+.ifconfig.co'
+  - '+.ipify.org'
+  - '+.icanhazip.com'
+  - '+.ipapi.co'
+  - '+.ip-api.com'
+  - '+.ipapi.is'
+  - '+.iplocation.net'
+  - '+.whatismyipaddress.com'
+  - '+.ip111.cn'
+  - '+.ip125.com'
+
+  # IP reputation / risk / proxy / VPN / fraud
+  - '+.ipcheck.ing'
+  - '+.ping0.cc'
+  - '+.scamalytics.com'
+  - '+.ipqualityscore.com'
+  - '+.abuseipdb.com'
+  - '+.proxycheck.io'
+  - '+.iphey.com'
+  - '+.browserleaks.com'
+  - '+.whoer.net'
+  - '+.ip2location.com'
+  - '+.ipregistry.co'
+  - '+.ipdata.co'
+  - '+.spur.us'
