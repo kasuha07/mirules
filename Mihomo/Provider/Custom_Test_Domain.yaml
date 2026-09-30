@@ -21,6 +21,12 @@ payload:
   - '+.whatismyipaddress.com'
   - '+.ip111.cn'
   - '+.ip125.com'
+  - '+.ipip.help'
+  - '+.ip.skk.moe'
+  - '+.ip2location.io'
+  - '+.ip.zxinc.org'
+  - '+.ip.bczs.net'
+  - '+.cip.cc'
 
   # IP reputation / risk / proxy / VPN / fraud
   - '+.ipcheck.ing'
@@ -36,3 +42,10 @@ payload:
   - '+.ipregistry.co'
   - '+.ipdata.co'
   - '+.spur.us'
+  - '+.ipfighter.com'
+  - '+.apivoid.com'
+  - '+.ippure.com'
+  - '+.iplark.com'
+  - '+.check.spamhaus.org'
+  - '+.ip234.in'
+  - '+.ipsuper.com'
