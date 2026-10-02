@@ -120,6 +120,9 @@ payload:
   - '+.downloads.sourceforge.net'
   - '+.dl.sourceforge.net'
 
+  # File hosting / large downloads
+  - '+.workupload.com'
+
   # Game content / large downloads
   - '+.sekai.best'
   - '+.bestdori.com'
