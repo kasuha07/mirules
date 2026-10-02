@@ -122,6 +122,15 @@ payload:
 
   # File hosting / large downloads
   - '+.workupload.com'
+  - '+.gofile.io'
+  - '+.pixeldrain.com'
+  - '+.mediafire.com'
+  - '+.mega.nz'
+  - '+.1fichier.com'
+  - '+.file.io'
+  - '+.transfer.sh'
+  - '+.catbox.moe'
+  - '+.send.vis.ee'
 
   # Game content / large downloads
   - '+.sekai.best'
