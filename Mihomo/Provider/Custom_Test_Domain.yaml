@@ -27,6 +27,9 @@ payload:
   - '+.ip.zxinc.org'
   - '+.ip.bczs.net'
   - '+.cip.cc'
+  - '+.ip.net.coffee'
+  - '+.ipok.io'
+  - '+.ipkk.com'
 
   # IP reputation / risk / proxy / VPN / fraud
   - '+.ipcheck.ing'
@@ -49,3 +52,6 @@ payload:
   - '+.check.spamhaus.org'
   - '+.ip234.in'
   - '+.ipsuper.com'
+
+  # AI service connectivity / diagnostics
+  - '+.claude-tester-six.vercel.app'
