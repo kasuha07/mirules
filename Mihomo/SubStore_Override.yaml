@@ -64,6 +64,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
       - "♻️ 自动选择"
     include-all-proxies: true
@@ -96,6 +97,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
     include-all-proxies: true
     exclude-type: direct
@@ -111,6 +113,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
     include-all-proxies: true
     exclude-type: direct
@@ -123,6 +126,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
       - "🚀 手动选择"
       - "♻️ 自动选择"
@@ -140,6 +144,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
     include-all-proxies: true
     exclude-type: direct
@@ -155,6 +160,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
     include-all-proxies: true
     exclude-type: direct
@@ -170,6 +176,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
     include-all-proxies: true
     exclude-type: direct
@@ -185,6 +192,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
     include-all-proxies: true
     exclude-type: direct
@@ -200,6 +208,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
     include-all-proxies: true
     exclude-type: direct
@@ -215,6 +224,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
     include-all-proxies: true
     exclude-type: direct
@@ -230,6 +240,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
+      - "☁ 良心云"
       - "🌐 其他地区"
     include-all-proxies: true
     exclude-type: direct
@@ -299,6 +310,12 @@ proxy-groups:
     interval: 600
     timeout: 5000
     tolerance: 50
+
+  - name: "☁ 良心云"
+    type: select
+    include-all-proxies: true
+    exclude-type: direct
+    filter: '\[LXY\]'
 
   - name: "🎯 全球直连"
     type: select
