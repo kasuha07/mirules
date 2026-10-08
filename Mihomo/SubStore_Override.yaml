@@ -89,6 +89,7 @@ proxy-groups:
   - name: "📦 大流量下载"
     type: select
     proxies:
+      - "☁ 良心云"
       - "🚀 手动选择"
       - "♻️ 自动选择"
       - "🎯 全球直连"
@@ -97,7 +98,6 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇸🇬 新加坡节点"
       - "🇹🇼 台湾节点"
-      - "☁ 良心云"
       - "🌐 其他地区"
     include-all-proxies: true
     exclude-type: direct
