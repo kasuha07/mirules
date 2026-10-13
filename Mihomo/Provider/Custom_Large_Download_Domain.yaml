@@ -133,6 +133,7 @@ payload:
   - '+.send.vis.ee'
 
   # Game content / large downloads
+  - 'biliplayer.91vrchat.com'
   - '+.sekai.best'
   - '+.bestdori.com'
   - '+.sbuga.com'
